@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ====== Contenedor ====== */
+.form-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ====== Inputs ====== */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+.input-group label {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  background: #fff;
+  padding: 0 5px;
+  font-size: 0.85em;
+  color: #666;
+}
+
+/* ====== Fechas y selects ====== */
+.date-group,
+.select-group {
+  margin-bottom: 20px;
+}
+
+.date-group input,
+.select-group select {
+  width: 100%;
+}
+
+/* ====== Checkbox y radios ====== */
+.checkbox-group,
+.radio-group {
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.radio-label {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* ====== Botones ====== */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.submit-btn {
+  background: #4facfe;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background: #00c6ff;
+}
+
+.reset-btn {
+  background: #eee;
+  color: #333;
+}
+
+.reset-btn:hover {
+  background: #ddd;
+}

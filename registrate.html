@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Avanzado</title>
+    <link rel="stylesheet" href="registrate.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 class="form-title">Formulario de Registro</h2>
+      <form action="#" method="post" class="advanced-form">
+        <div class="input-group">
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="nombre"
+            ><i class="fas fa-user"></i> Nombre completo</label
+          >
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" name="email" required />
+          <label for="email"
+            ><i class="fas fa-envelope"></i> Correo electrónico</label
+          >
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" name="password" required />
+          <label for="password"><i class="fas fa-lock"></i> Contraseña</label>
+        </div>
+
+        <div class="input-group select-group">
+          <label for="pais">País de residencia</label>
+          <select id="pais" name="pais">
+            <option value="" disabled selected>Selecciona un país</option>
+            <option value="ar">Argentina</option>
+            <option value="cl">Chile</option>
+            <option value="mx">México</option>
+            <option value="es">España</option>
+            <option value="ur">Uruguay</option>
+            <option value="pa">Paraguay</option>
+            <option value="co">Colombia</option>
+          </select>
+        </div>
+
+        <div class="input-group date-group">
+          <label for="nacimiento"
+            ><i class="fas fa-calendar-alt"></i> Fecha de nacimiento</label
+          >
+          <input type="date" id="nacimiento" name="nacimiento" />
+        </div>
+
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="terminos" required />
+            <span>Acepto los <a href="#">términos y condiciones</a></span>
+          </label>
+        </div>
+
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="genero" value="hombre" />
+            <span class="radio-custom"></span> Hombre
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="genero" value="mujer" />
+            <span class="radio-custom"></span> Mujer
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="genero" value="otro" />
+            <span class="radio-custom"></span> Otro
+          </label>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Enviar
+          </button>
+          <button type="reset" class="reset-btn">
+            <i class="fas fa-sync-alt"></i> Limpiar
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const rangeInput = document.getElementById("rango");
+      const rangeValue = document.getElementById("rango-valor");
+      rangeInput.addEventListener("input", () => {
+        rangeValue.textContent = rangeInput.value;
+      });
+    </script>
+  </body>
+</html>
